@@ -1516,7 +1516,7 @@ main{
 }
 
 
-@media(min-width : 360px) and (max-width : 400px){
+/* @media(min-width : 360px) and (max-width : 400px){
  body{
         margin: 0;
         padding: 0;
@@ -1948,7 +1948,7 @@ main{
     margin-top: -10px;
 }
 
-} 
+}  */
 
 
 @media(min-width : 767px) and (max-width : 1150px){
