@@ -1951,7 +1951,7 @@ main{
 } 
 
 
-@media (min-width : 767px) and (max-width : 1200px){
+@media (min-width : 767px) and (max-width : 1150px){
         body{
                 margin: 0;
                 padding: 0;
