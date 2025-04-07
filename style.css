@@ -1517,7 +1517,7 @@ main{
 
 
 @media(min-width : 360px) and (max-width : 400px){
-    body{
+ body{
         margin: 0;
         padding: 0;
         overflow-x: hidden;
@@ -1951,7 +1951,7 @@ main{
 } 
 
 
-@media (min-width : 767px) and (max-width : 1150px){
+@media(min-width : 767px) and (max-width : 1150px){
         body{
                 margin: 0;
                 padding: 0;
