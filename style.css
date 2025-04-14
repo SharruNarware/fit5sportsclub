@@ -1088,7 +1088,7 @@ li a:hover{
 
 
 
-@media(min-width : 410px) and (max-width : 431px){
+@media(min-width : 410px) and (max-width : 480px){
 body{
         margin: 0;
         padding: 0;
@@ -1946,7 +1946,7 @@ main{
  .rights #right{
     margin-top: -10px;
  }
- 
+
 }
 
 @media(min-width : 767px) and (max-width : 1150px){
