@@ -552,6 +552,7 @@ main{
     flex-direction: column;
     flex-wrap: wrap;
     flex-direction: column;   
+    overflow-x: hidden;
 }
 .topbar{
         width: 100%;
@@ -559,27 +560,33 @@ main{
         background-color: rgb(0, 0, 0);
         color: white;
         display: flex; 
+        overflow-x: hidden;
 }
 .mail{
     margin-left: -200px;
+    overflow-x: hidden;
 }
 .contact{
         padding-left: 10px;
         padding-top: 10px;
         margin-right: 0px;
+        overflow-x: hidden;
 }
 #no2{
     margin-left: 20px;
+    overflow-x: hidden;
 }
 .btn1{
     margin-left: 70px;
     margin-top: 5px;
     width: 230px;
     border: none;
+    overflow-x: hidden;
 }
 .btn2{
     margin-left: 30px;
     margin-right: -100px;
+    overflow-x: hidden;
 } 
 
 
@@ -587,6 +594,7 @@ main{
     width: 100%;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 .logo{
     display: flex;
@@ -613,6 +621,7 @@ main{
     padding-top: 3px;
     padding-bottom: 3px;
     width: 40px;
+    overflow-x: hidden;
 }
 .ul{
     width: 100%;
@@ -639,6 +648,7 @@ main{
     display: flex;
     flex-direction: column;
     margin-top: 70px;
+    overflow-x: hidden;
 }
 #divlogo img{
     margin-left: 10px;
@@ -732,6 +742,7 @@ main{
     padding: 0px;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 .about .para{
     margin-top: 20px;
@@ -739,6 +750,7 @@ main{
     width: 90%;
     margin-left: 20px;
     margin-right: 10px;
+    overflow-x: hidden;
 }
 .about img{
     height: 450px;
@@ -746,6 +758,7 @@ main{
     margin-top: -80px;
     margin-right: 20px;
     margin-left: 10px;
+    overflow-x: hidden;
 }
 
 
@@ -755,6 +768,7 @@ main{
     display: flex;
     flex-direction: column;
     margin-top: -500px;
+    overflow-x: hidden;
 }
 .mission{
     height: 100%;
@@ -762,6 +776,7 @@ main{
     margin-left: 25px;
     margin-right: 0px;
     margin-top: 20px;
+    overflow-x: hidden;
 }
 .vision{
     height: 100%;

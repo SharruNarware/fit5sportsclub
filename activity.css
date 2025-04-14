@@ -576,7 +576,8 @@ li a:hover{
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            flex-direction: column;   
+            flex-direction: column;  
+            overflow-x: hidden; 
     }
     .topbar{
                 width: 100%;
@@ -584,6 +585,7 @@ li a:hover{
                 background-color: rgb(0, 0, 0);
                 color: white;
                 display: flex; 
+                overflow-x: hidden;
     }
     .mail{
             margin-left: -200px;
@@ -592,6 +594,7 @@ li a:hover{
                 padding-left: 10px;
                 padding-top: 10px;
                 margin-right: 0px;
+                overflow-x: hidden;
     }
     #no2{
             margin-left: 20px;
@@ -601,10 +604,12 @@ li a:hover{
             margin-top: 5px;
             width: 230px;
             border: none;
+            overflow-x: hidden;
     }
     .btn2{
             margin-left: 30px;
             margin-right: -100px;
+            overflow-x: hidden;
     } 
         
         
@@ -612,6 +617,7 @@ li a:hover{
             width: 100%;
             display: flex;
             flex-direction: column;
+            overflow-x: hidden;
     }
     .logo{
             display: flex;
@@ -638,6 +644,7 @@ li a:hover{
             padding-top: 3px;
             padding-bottom: 3px;
             width: 40px;
+            overflow-x: hidden;
     }
     .ul{
             width: 100%;
@@ -696,6 +703,7 @@ li a:hover{
             height: 35px;
             font-size: 12px;
             display: block !important;
+            overflow-x: hidden;
     }
     #registerBtn {
             right: -30px;
@@ -704,6 +712,7 @@ li a:hover{
             font-size: 10px;
             padding: 6px 10px;
             display: block !important;
+            overflow-x: hidden;
     }
         
         
@@ -878,7 +887,8 @@ li a:hover{
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
-                flex-direction: column;   
+                flex-direction: column;
+                overflow-x: hidden;   
         }
         .topbar{
                     width: 100%;
@@ -886,6 +896,7 @@ li a:hover{
                     background-color: rgb(0, 0, 0);
                     color: white;
                     display: flex; 
+                    overflow-x: hidden;
         }
         .mail{
                 margin-left: -200px;
@@ -903,10 +914,12 @@ li a:hover{
             margin-top: 5px;
             width: 240px;
             border: none;
+            overflow-x: hidden;
         }
         .btn2{
                 margin-left: 30px;
                 margin-right: -100px;
+                overflow-x: hidden;
         } 
             
             
@@ -914,6 +927,7 @@ li a:hover{
                 width: 100%;
                 display: flex;
                 flex-direction: column;
+                overflow-x: hidden;
         }
         .logo{
                 display: flex;
@@ -940,6 +954,7 @@ li a:hover{
                 padding-top: 3px;
                 padding-bottom: 3px;
                 width: 40px;
+                overflow-x: hidden;
         }
         .ul{
                 width: 100%;
@@ -966,6 +981,7 @@ li a:hover{
         display: flex;
         flex-direction: column;
         margin-top: 70px;
+        overflow-x: hidden;
     }
     #divlogo img{
         height: 100px;
@@ -997,7 +1013,7 @@ li a:hover{
                 width: 35px;
                 height: 35px;
                 font-size: 12px;
-                display: block !important;
+                overflow-x: hidden;
 }
 #registerBtn {
                 right: -30px;
@@ -1005,13 +1021,14 @@ li a:hover{
                 transform: rotate(90deg);
                 font-size: 10px;
                 padding: 6px 10px;
-                display: block !important;
+                overflow-x: hidden;
 }
             
             
 .bgimg{
                 width: 430px;
                 height: 200px;
+                overflow-x: hidden;
 }
 #bgimg img{
                 width: 100%;
