@@ -897,8 +897,8 @@ li a:hover{
     margin-top: 10px;
 }
 .news1 img{
-    height: 70px;
-    width: 67px;
+    height: 60px;
+    width: 60px;
     border-radius: 100%;
     margin-top: 10px;
     margin-left: 15px;
@@ -1448,7 +1448,11 @@ main{
 .newslist .head{
     width: 378px;
 }
+.news1 img{
+    height: 70px;
+    width: 70px;
 
+}
 .news1{
     margin-top: 10px;
 }
