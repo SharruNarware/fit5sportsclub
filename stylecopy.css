@@ -1,0 +1,176 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 20px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    /* flex-wrap: wrap; */
+
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.left .email {
+    margin-bottom: 5px;
+}
+
+.left a:hover{
+    text-decoration: underline;
+}
+
+.contact {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 0px 15px;
+}
+
+.contact i{
+    padding-right: 4px;
+}
+
+.contact a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.email i{
+    padding-right: 4px;
+}
+
+.email a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+.contact .phone::after {
+    content: ", ";
+}
+
+.contact .phone:last-child::after {
+    content: "";
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.right .register {
+    display: flex;
+    margin-left: 10px;
+    padding: 7px 16px; 
+    border: none;
+    background-color: rgb(113, 89, 14);
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    animation: colorAnimation 0.5s infinite alternate ease-in-out 0s forwards running;
+}
+
+@keyframes colorAnimation {
+    from{
+        background-color: rgb(113, 89, 14);
+        text-decoration: none;
+    }
+    to{
+        background-color: rgb(174, 132, 63);
+        text-decoration: underline;
+    }
+}
+
+button i{
+    padding-left: 5px;
+}
+
+.right .donate {
+    display: flex;
+    margin-left: 10px;
+    padding: 7px 16px;
+    border: none;
+    background-color: rgb(113, 89, 14);
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    animation: colorAnimation2 0.5s infinite alternate ease-in-out 0s forwards running;
+} 
+
+@keyframes colorAnimation2 {
+    from{
+        background-color: rgb(5, 57, 57);
+    }
+    to{
+        background-color: rgb(6, 66, 88);
+    }
+}
+
+
+.right .donate {
+    display: inline-block;
+} 
+
+
+/*Responsive styles */
+@media (max-width: 768px) {
+    .topbar {
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .left .email {
+        display: none;
+    }
+
+    .left {
+        width: 55%;
+    }
+   .contact {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    #no2{
+        margin-left: 9px;
+    }
+
+    .contact .phone::after {
+        content: ""; 
+    }
+
+    .right {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        width: auto;
+    }  
+
+    .right .donate {
+        display: none;
+    }
+}

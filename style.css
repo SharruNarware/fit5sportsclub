@@ -1,88 +1,94 @@
-body{
+
+* {
     margin: 0;
     padding: 0;
-    font-family: "Roboto", sans-serif;
-    background-color: white;
     box-sizing: border-box;
-    overflow-x: hidden;
+    font-family: Arial, sans-serif;
 }
 
+body {
+    background-color: #f5f5f5;
+}
 
-main{
-    height: 100vh;
+.topbar {
     display: flex;
-    flex-direction: column;
-    
-}
-
-.topbar{
-    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 20px;
     background-color: rgb(0, 0, 0);
-    color: white;
-    display: flex; 
+    color: #fff;
+    /* flex-wrap: wrap; */
+
 }
 
-.mail{
-    margin-left: 100px;
-    padding-right: 20px;
-    padding-top: 15px;
-}
-
-.mail a{
-    color: white;
-    text-decoration: none;
-}
-
-.mail a:hover{
-    text-decoration: underline;
-}
-
-.contact{
-    padding-left: 20px;
-    padding-top: 15px;
-    margin-right: 200px;
-}
-
-.contact a{
-    color: white;
-    text-decoration: none;
-}
-
-.contact a:hover{
-    text-decoration: underline;
-}
-
-.topbtn{
+.left {
     display: flex;
-
+    align-items: center;
 }
 
-.btn1{
-    margin-left: 300px;
-    margin-top: 4px;
-    padding-top: 10px;
-    padding-bottom: 25px;
+.left .email {
+    margin-bottom: 5px;
+}
+
+.left a:hover{
+    text-decoration: underline;
+}
+
+.contact {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 0px 15px;
+}
+
+.contact i{
+    padding-right: 4px;
+}
+
+.contact a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.email i{
+    padding-right: 4px;
+}
+
+.email a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+.contact .phone::after {
+    content: ", ";
+}
+
+.contact .phone:last-child::after {
+    content: "";
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.right .register {
+    display: flex;
+    /* margin-left: 10px; */
+    padding: 7px 16px; 
+    border: none;
     background-color: rgb(113, 89, 14);
-    border-radius: 7px;
-    border:2px solid white;
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
     cursor: pointer;
-    height: 3px;
-    width: 140px;
-    text-align: center;
-
-
-    /* animation-name: colorAnimation;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0s;
-    animation-fill-mode: forwards;
-    animation-play-state: running; */
-
+    font-size: 14px;
     animation: colorAnimation 0.5s infinite alternate ease-in-out 0s forwards running;
-} 
-
+}
 
 @keyframes colorAnimation {
     from{
@@ -95,24 +101,21 @@ main{
     }
 }
 
-.btn1 a{
-    color: white;
-    text-decoration: none;
-    padding-right: 5px;
+button i{
+    padding-left: 5px;
 }
 
-.btn2{
-    margin-left: 20px;
-    margin-top: 4px;
-    padding-top: 10px;
-    padding-bottom: 25px;
+.right .donate {
+    display: flex;
+    margin-left: 10px;
+    padding: 7px 16px;
+    border: none;
     background-color: rgb(113, 89, 14);
-    border-radius: 7px;
-    border:2px solid white;
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
     cursor: pointer;
-    height: 3px;
-    width: 140px;
-    text-align: center;
+    font-size: 14px;
     animation: colorAnimation2 0.5s infinite alternate ease-in-out 0s forwards running;
 } 
 
@@ -126,15 +129,66 @@ main{
 }
 
 
-.btn2 a{
-    color: white;
-    text-decoration: none;
-    padding-right: 5px;
+.right .donate {
+    display: inline-block;
+} 
+
+
+/*Responsive styles */
+@media (max-width: 768px) {
+    .topbar {
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .left .email {
+        display: none;
+    }
+
+    .left {
+        width: 55%;
+    }
+   .contact {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    #no2{
+        margin-left: 9px;
+    }
+
+    .contact .phone::after {
+        content: ""; 
+    }
+
+    .right {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        width: auto;
+    }  
+
+    .right .donate {
+        display: none;
+    }
 }
 
-.btn2 a:hover{
-    text-decoration: underline;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .navbar{
     height: 100px;
@@ -1090,52 +1144,6 @@ li a:hover{
 
 
 @media(min-width : 410px) and (max-width : 480px){
-body{
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        width: 410px;
-}
-main{
-    width: 410px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex-direction: column; 
-    overflow-x: hidden;  
-}
-.topbar{
-        width: 100%;
-        height: 50px;
-        background-color: rgb(0, 0, 0);
-        color: white;
-        display: flex; 
-        overflow-x: hidden;
-}
-.mail{
-    margin-left: -200px;
-}
-.contact{
-        padding-left: 10px;
-        padding-top: 10px;
-        margin-right: 0px;
-}
-#no2{
-    margin-left: 20px;
-}
-.btn1{
-    margin-left: 70px;
-    margin-top: 5px;
-    width: 230px;
-    border: none;
-    overflow-x: hidden;
-}
-.btn2{
-    margin-left: 30px;
-    margin-right: -100px;
-} 
-
 
 .navbar{
     width: 100%;
@@ -1545,49 +1553,6 @@ main{
 }
 
  @media(min-width : 360px) and (max-width : 400px){
- body{
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        width: 360px;
-}
-main{
-    width: 360px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex-direction: column;   
-}
-.topbar{
-        width: 100%;
-        height: 50px;
-        background-color: rgb(0, 0, 0);
-        color: white;
-        display: flex; 
-}
-.mail{
-    margin-left: -200px;
-}
-.contact{
-        padding-left: 10px;
-        padding-top: 10px;
-        margin-right: 0px;
-}
-#no2{
-    margin-left: 20px;
-}
-.btn1{
-    margin-left: 56px;
-    margin-top: 5px;
-    width: 240px;
-    border: none;
-}
-.btn2{
-    margin-left: 30px;
-    margin-right: -100px;
-} 
-
 
 .navbar{
     width: 100%;
