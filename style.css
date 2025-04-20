@@ -1,95 +1,82 @@
-
-* {
+body{
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: white;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
 
-body {
-    background-color: #f5f5f5;
-}
 
-.topbar {
+main{
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 9px 20px;
+    flex-direction: column;
+    
+}
+
+.topbar{
+    height: 50px;
     background-color: rgb(0, 0, 0);
-    color: #fff;
-    /* flex-wrap: wrap; */
-
+    color: white;
+    display: flex; 
 }
 
-.left {
-    display: flex;
-    align-items: center;
+.mail{
+    margin-left: 100px;
+    padding-right: 20px;
+    padding-top: 15px;
 }
 
-.left .email {
-    margin-bottom: 5px;
+.mail a{
+    color: white;
+    text-decoration: none;
 }
 
-.left a:hover{
+.mail a:hover{
     text-decoration: underline;
 }
-
-.contact {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin: 0px 15px;
+.contact{
+    padding-left: 20px;
+    padding-top: 15px;
+    margin-right: 200px;
 }
-
-.contact i{
-    padding-right: 4px;
-}
-
-.contact a {
+.contact a{
     color: white;
     text-decoration: none;
-    font-size: 15px;
 }
-
-.email i{
-    padding-right: 4px;
+.contact a:hover{
+    text-decoration: underline;
 }
-
-.email a {
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-
-.contact .phone::after {
-    content: ", ";
-}
-
-.contact .phone:last-child::after {
-    content: "";
-}
-
-.right {
+.topbtn{
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
 
-.right .register {
-    display: flex;
-    /* margin-left: 10px; */
-    padding: 7px 16px; 
-    border: none;
+}
+.btn1{
+    margin-left: 300px;
+    margin-top: 4px;
+    padding-top: 10px;
+    padding-bottom: 25px;
     background-color: rgb(113, 89, 14);
-    color: white;
-    border: 2px solid white;
-    border-radius: 4px;
+    border-radius: 7px;
+    border:2px solid white;
     cursor: pointer;
-    font-size: 14px;
-    animation: colorAnimation 0.5s infinite alternate ease-in-out 0s forwards running;
-}
+    height: 3px;
+    width: 140px;
+    text-align: center;
 
+
+    /* animation-name: colorAnimation;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-play-state: running; */
+
+    animation: colorAnimation 0.5s infinite alternate ease-in-out 0s forwards running;
+} 
 @keyframes colorAnimation {
     from{
         background-color: rgb(113, 89, 14);
@@ -100,25 +87,25 @@ body {
         text-decoration: underline;
     }
 }
-
-button i{
-    padding-left: 5px;
-}
-
-.right .donate {
-    display: flex;
-    margin-left: 10px;
-    padding: 7px 16px;
-    border: none;
-    background-color: rgb(113, 89, 14);
+.btn1 a{
     color: white;
-    border: 2px solid white;
-    border-radius: 4px;
+    text-decoration: none;
+    padding-right: 5px;
+}
+.btn2{
+    margin-left: 20px;
+    margin-top: 4px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    background-color: rgb(113, 89, 14);
+    border-radius: 7px;
+    border:2px solid white;
     cursor: pointer;
-    font-size: 14px;
+    height: 3px;
+    width: 140px;
+    text-align: center;
     animation: colorAnimation2 0.5s infinite alternate ease-in-out 0s forwards running;
 } 
-
 @keyframes colorAnimation2 {
     from{
         background-color: rgb(5, 57, 57);
@@ -127,67 +114,14 @@ button i{
         background-color: rgb(6, 66, 88);
     }
 }
-
-
-.right .donate {
-    display: inline-block;
-} 
-
-
-/*Responsive styles */
-@media (max-width: 768px) {
-    .topbar {
-        flex-direction: row;
-        align-items: stretch;
-    }
-
-    .left .email {
-        display: none;
-    }
-
-    .left {
-        width: 55%;
-    }
-   .contact {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        width: 100%;
-    }
-
-    #no2{
-        margin-left: 9px;
-    }
-
-    .contact .phone::after {
-        content: ""; 
-    }
-
-    .right {
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-        width: auto;
-    }  
-
-    .right .donate {
-        display: none;
-    }
+.btn2 a{
+    color: white;
+    text-decoration: none;
+    padding-right: 5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.btn2 a:hover{
+    text-decoration: underline;
+}
 
 
 .navbar{
@@ -1144,6 +1078,50 @@ li a:hover{
 
 
 @media(min-width : 410px) and (max-width : 480px){
+    body{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+}
+main{
+    width: 420px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    overflow-x: hidden;  
+}
+.topbar{
+        width: 100%;
+        height: 50px;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        display: flex; 
+        overflow-x: hidden;
+}
+.mail{
+    margin-left: -200px;
+}
+.contact{
+        padding-left: 10px;
+        padding-top: 10px;
+        margin-right: 0px;
+}
+#no2{
+    margin-left: 20px;
+}
+.btn1{
+    margin-left: 70px;
+    margin-top: 5px;
+    width: 230px;
+    border: none;
+}
+.btn2{
+    margin-left: 30px;
+    margin-right: -100px;
+    overflow-x: hidden;
+} 
 
 .navbar{
     width: 100%;
@@ -1553,6 +1531,47 @@ li a:hover{
 }
 
  @media(min-width : 360px) and (max-width : 400px){
+    body{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+}
+main{
+    width: 420px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: column;   
+}
+.topbar{
+        width: 100%;
+        height: 50px;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        display: flex; 
+}
+.mail{
+    margin-left: -200px;
+}
+.contact{
+        padding-left: 10px;
+        padding-top: 10px;
+        margin-right: 0px;
+}
+#no2{
+    margin-left: 20px;
+}
+.btn1{
+margin-left: 56px;
+margin-top: 5px;
+width: 240px;
+border: none;
+}
+.btn2{
+    margin-left: 30px;
+    margin-right: -100px;
+} 
 
 .navbar{
     width: 100%;
