@@ -590,7 +590,7 @@ button i{
 }
 
 .image-block img {
-  max-width: 90%;
+  max-width: 80%;
   height: auto;
   border-radius: 8px;
   border: 2px solid rgb(5, 57, 57);
@@ -629,7 +629,7 @@ button i{
 
 /* Scrolling Image Section Styles */
 .scrolling-image-section {
-  padding: 20px 150px;
+  padding: 30px 150px;
   overflow: hidden;
   background-color: #f7f7f7;
   position: relative;
