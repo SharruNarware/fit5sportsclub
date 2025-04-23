@@ -293,10 +293,12 @@ button i{
 
     .menu-toggle {
         margin-right: 20px;
-        padding: 0px 4px;
+        padding: 0px 10px;
         display: block;
         color: black;
-        border: 2px solid black;
+        border-radius: 3px;
+        border: 1px solid rgb(9, 9, 9);
+        background-color: rgba(181, 175, 175, 0.388);
     }
 
     .logo {
@@ -330,3 +332,36 @@ button i{
         align-items: center;
     }
 }
+
+
+
+
+/* Banner Styles */
+.responsive-banner {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .banner {
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  
+  /* Show desktop banner on larger screens */
+  .desktop-banner {
+    display: block;
+  }
+  
+  /* Hide desktop and show mobile banner on small screens */
+  @media (max-width: 768px) {
+    .desktop-banner {
+      display: none;
+    }
+  
+    .mobile-banner {
+      display: block;
+    }
+  }
+  
