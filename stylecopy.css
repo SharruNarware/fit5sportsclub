@@ -485,6 +485,7 @@ button i{
       .boxes-section {
         flex-direction: column;
         align-items: center;
+        padding: 20px 0px;
       }
     
       .box {
@@ -539,7 +540,7 @@ button i{
 }
 
 .image-content img {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
   border-radius: 8px;
   border: 2px solid rgb(5, 57, 57);
@@ -550,7 +551,7 @@ button i{
     flex-direction: column;
     align-items: center;
     text-align: start;
-    padding: 30px 60px;
+    padding: 30px 30px;
   }
 
   .text-content,
@@ -566,3 +567,60 @@ button i{
     font-size: 16px;
   }
 }
+
+
+
+
+
+
+/* Image and Text Section Styles */
+.image-text-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 40px 130px;
+  flex-wrap: wrap;
+}
+
+.image-block {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-block img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid rgb(5, 57, 57);
+}
+
+.text-block {
+  flex: 1 1 55%;
+  color: #444;
+}
+
+.text-paragraph {
+  font-size: 16px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .image-text-section {
+    flex-direction: column;
+    padding: 20px 30px;
+  }
+
+  .image-block,
+  .text-block {
+    flex: 1 1 100%;
+  }
+
+  .text-paragraph {
+    font-size: 14px;
+  }
+}
+
