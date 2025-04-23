@@ -365,3 +365,51 @@ button i{
     }
   }
   
+
+
+/* Info Section Styles */
+.info-section {
+    padding: 40px 20px;
+    margin-top: 30px;
+    background-color: #f8f8f8;
+    text-align: center;
+  }
+  
+  .info-container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .info-heading {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: rgb(6, 66, 88);
+  }
+  
+  .info-paragraph {
+    font-size: 18px;
+    color: #312d2d;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .info-heading {
+      font-size: 24px;
+    }
+  
+    .info-paragraph {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .info-heading {
+      font-size: 20px;
+    }
+  
+    .info-paragraph {
+      font-size: 14px;
+    }
+  }
+  
+
