@@ -686,3 +686,10 @@ button i{
 }
 
 
+
+.dual-background-section {
+  background: linear-gradient(to bottom, rgb(5, 57, 57) 30%, rgb(154, 80, 27) 30%);
+  padding: 50px 130px;
+  overflow: hidden;
+}
+
