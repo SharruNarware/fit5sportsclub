@@ -83,10 +83,11 @@ body {
     border: none;
     background-color: rgb(113, 89, 14);
     color: white;
-    border: 2px solid white;
+    box-shadow: 0 5px 0 rgb(44, 35, 10);
     border-radius: 4px;
     cursor: pointer;
     font-size: 14px;
+    transition: all .1s linear;
     animation: colorAnimation 0.5s infinite alternate ease-in-out 0s forwards running;
 }
 
@@ -101,6 +102,11 @@ body {
     }
 }
 
+.right .register:active {
+  box-shadow: 0 2px 0 rgb(44, 35, 10);
+  transform: translateY(3px);
+}
+
 button i{
     padding-left: 5px;
 }
@@ -110,12 +116,13 @@ button i{
     margin-left: 10px;
     padding: 7px 15px;
     border: none;
-    background-color: rgb(113, 89, 14);
+    background-color: rgb(5, 57, 57);
     color: white;
-    border: 2px solid white;
+    box-shadow: 0 5px 0 rgb(3, 33, 33);
     border-radius: 4px;
     cursor: pointer;
     font-size: 14px;
+    transition: all .1s linear;
     animation: colorAnimation2 0.5s infinite alternate ease-in-out 0s forwards running;
 } 
 
@@ -133,6 +140,10 @@ button i{
     display: inline-block;
 } 
 
+.right .donate:active {
+  box-shadow: 0 2px 0 rgb(3, 33, 33);
+  transform: translateY(3px);
+}
 
 /*Responsive styles */
 @media (max-width: 768px) {
@@ -693,6 +704,7 @@ button i{
   background: linear-gradient(to bottom, rgb(5, 57, 57) 30%, rgb(154, 80, 27) 30%);
   padding: 20px;
   overflow: hidden;
+  position: relative;
 }
 
 .dual-background-section h1{
@@ -720,6 +732,7 @@ button i{
   flex-shrink: 0;
   border: 2px solid rgb(5, 57, 57);
   box-shadow: 5px 5px 5px 5px rgb(29, 40, 40);
+  object-fit: cover;
 }
 
 .card-image {
@@ -779,15 +792,6 @@ button i{
   text-decoration: underline;
 }
 
-@keyframes scrollLeftToRight {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
 @media (max-width: 768px) {
   .dual-background-section {
     padding: 30px 20px;
@@ -796,7 +800,18 @@ button i{
   .cards-container {
     overflow-x: hidden;
     height: auto;
+    width: fit-content;
+    animation: 10s linear 0.1s infinite alternate slide-in;
   }
+  
+    @keyframes slide-in {
+      0% {
+        transform: translateX(-80%);
+      }
+      100%{
+        transform: translateX(30%);
+      }
+    }
 
   .info-card {
     width: 300px;
