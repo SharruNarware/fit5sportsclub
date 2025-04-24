@@ -932,3 +932,80 @@ button i{
 }
 
 
+/* About Us Section */
+.about-us-section {
+  background-color: #f4f4f4;
+  padding: 30px 0px;
+  text-align: center;
+}
+
+.about-us-section h4 {
+  color: darkgreen;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+}
+
+.about-us-section h2 {
+  color: #000;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about-us-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+.about-us-section h3 {
+  font-size: 25px;
+  color: #111;
+  margin-top: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about-us-section ul {
+  list-style: disc;
+  padding-left: 40px;
+  text-align: left;
+  max-width: 800px;
+  margin: 10px auto;
+  color: #1b1919;
+}
+
+.about-us-section ul li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.about-us-section button {
+  background-color: darkgreen;
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .about-us-section h2 {
+    font-size: 24px;
+  }
+  .about-us-section p,
+  .about-us-section ul li {
+    font-size: 15px;
+  }
+  .about-us-section h3 {
+    font-size: 22px;
+  }
+}
+
