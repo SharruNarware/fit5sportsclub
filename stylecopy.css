@@ -725,8 +725,8 @@ button i{
   background: rgb(190, 233, 226);
   border-radius: 5px;
   overflow: hidden;
-  width: 350px;
-  min-width: 350px;
+  width: 400px;
+  min-width: 400px;
   height: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
@@ -803,7 +803,7 @@ button i{
     width: fit-content;
     animation: 10s linear 0.1s infinite alternate slide-in;
   }
-  
+
     @keyframes slide-in {
       0% {
         transform: translateX(-80%);
@@ -828,4 +828,8 @@ button i{
     padding: 10px 25.8px;
   }
 }
+
+
+
+
 
