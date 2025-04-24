@@ -1022,10 +1022,10 @@ button i{
 .news-box {
   width: 80%;
   background: linear-gradient(to bottom, rgb(3, 52, 68) 13%, #d4d2d2 13%);
-  box-shadow: 4px 4px rgb(168, 166, 166);
   border-radius: 3px;
   padding-bottom: 10px;
   overflow: hidden;
+  box-shadow: 4px 4px 4px 4px rgb(55, 63, 63);
 }
 
 @media (max-width: 768px) {
@@ -1071,6 +1071,7 @@ button i{
   border-radius: 50%;
   object-fit: cover;
   margin-right: 20px;
+  box-shadow: 0 0 3px 4px rgb(103, 105, 105);
 }
 
 .news-content h3 {
