@@ -485,10 +485,16 @@ button i{
       border-radius: 5px;
       cursor: pointer;
       transition: background-color 0.3s;
+      transition: all .1s linear;
+    }
+
+    .box-btn:active {
+      transform: translateY(3px);
+      box-shadow: 0 5px 0 rgb(116, 66, 6);
     }
     
     .box-btn:hover {
-      background-color: rgb(171, 108, 30);
+      background-color: rgb(174, 115, 43);
       text-decoration: underline;
     }
     
@@ -901,7 +907,7 @@ button i{
 .section-green-two .image-content button {
   width: 90%;
   padding: 10px 0;
-  background-color: rgb(213, 82, 12);
+  background-color: rgb(153, 62, 13);
   color:black;
   font-size: 17px;
   box-shadow: 0 5px 0 rgb(44, 35, 10);
@@ -912,9 +918,14 @@ button i{
   transition: all .1s linear;
 }
 
+.section-green-two .image-content button:hover {
+  text-decoration: underline;
+}
+
 .section-green-two .image-content button:active {
   transform: translateY(3px);
   box-shadow: 0 5px 0 rgb(44, 35, 10);
+  background-color: rgb(171, 108, 30);
 }
 
 @media (max-width: 991px) {
@@ -994,6 +1005,12 @@ button i{
   font-size: 16px;
   margin-top: 30px;
   cursor: pointer;
+  transition: all .1s linear;
+}
+
+.about-us-section button:active {
+  transform: translateY(3px);
+  box-shadow: 0 5px 0 rgb(7, 68, 8);
 }
 
 @media (max-width: 768px) {
@@ -1021,7 +1038,7 @@ button i{
 
 .news-box {
   width: 80%;
-  background: linear-gradient(to bottom, rgb(3, 52, 68) 13%, #e6e4e4 13%);
+  background: linear-gradient(to bottom, rgb(3, 52, 68) 15%, #e6e4e4 13%);
   border-radius: 3px;
   padding-bottom: 10px;
   overflow: hidden;
@@ -1031,7 +1048,7 @@ button i{
 @media (max-width: 768px) {
   .news-box {
     width: 90%;
-    background: linear-gradient(to bottom, rgb(6, 64, 77) 8%, #d4d2d2 8%);
+    background: linear-gradient(to bottom, rgb(6, 64, 77) 10%, #d4d2d2 8%);
   }
 }
 
@@ -1050,7 +1067,6 @@ button i{
   }
   to{
       text-decoration: underline;
-      background-color: rgb(4, 58, 78);
   }
 }
 
@@ -1154,7 +1170,7 @@ button i{
   background: #fff;
   width: 240px;
   height: 240px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1205,7 +1221,7 @@ button i{
 }
 
   @keyframes slideBoxesMobile {
-    0% { transform: translateX(-50%); }
+    0% { transform: translateX(-100%); }
     100% { transform: translateX(100%); }
   }
 
@@ -1233,3 +1249,130 @@ button i{
     height: 70px;
   }
 } */
+
+
+
+.footer-section {
+  background-color: rgba(6, 43, 51, 0.975);
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1 1 22%;
+  min-width: 230px;
+}
+
+.footer-logo-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.footer-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.footer-name h3 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.footer-name p {
+  font-size: 10px;
+  margin: 0;
+}
+
+.footer-subheading {
+  margin-top: 10px;
+  font-size: 27px;
+  font-weight: bold;
+  max-width: fit-content;
+}
+
+.footer-heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin: 5px 0;
+  font-size: 17px;
+}
+
+.footer-column li i {
+  padding: 5px;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.footer-column a:hover {
+  color:rgb(154, 80, 27);
+}
+
+
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid rgba(236, 232, 232, 0.766);
+  padding-top: 10px;
+}
+
+.footer-copy {
+  margin: 0;
+  font-size: 14px;
+  /* text-decoration: overline; */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .footer-logo-section {
+    justify-content: center;
+  }
+
+  .footer-subheading {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+
+
