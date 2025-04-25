@@ -1021,7 +1021,7 @@ button i{
 
 .news-box {
   width: 80%;
-  background: linear-gradient(to bottom, rgb(3, 52, 68) 13%, #d4d2d2 13%);
+  background: linear-gradient(to bottom, rgb(3, 52, 68) 13%, #e6e4e4 13%);
   border-radius: 3px;
   padding-bottom: 10px;
   overflow: hidden;
@@ -1071,7 +1071,7 @@ button i{
   border-radius: 50%;
   object-fit: cover;
   margin-right: 20px;
-  box-shadow: 0 0 3px 4px rgb(103, 105, 105);
+  box-shadow: 0 0 3px 4px rgb(85, 91, 91);
 }
 
 .news-content h3 {
@@ -1121,3 +1121,115 @@ button i{
 
 
 
+/* Our Supporters Section CSS */
+.supporters-section {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.supporters-subheading {
+  color: darkgreen;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.supporters-heading {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+  color: #000;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.supporters-wrapper {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  /* animation: slideBoxes 20s linear infinite; */
+}
+
+.supporter-box {
+  background: #fff;
+  width: 240px;
+  height: 240px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.supporter-box h3 {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.supporter-box img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.supporters-wrapper #duplicate {
+  display: none;
+} 
+
+
+/* @keyframes slideBoxes {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+} */
+
+@media (max-width: 1024px) {
+  .supporters-wrapper {
+    animation: slideBoxesMobile 8s linear infinite;
+  }
+
+  .supporters-wrapper #duplicate {
+    display: block;
+  }
+
+  .supporter-box h3 {
+     margin-top: 25px;
+  }
+
+  .supporter-box img {
+    margin-bottom: 20px;
+  }
+
+}
+
+  @keyframes slideBoxesMobile {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(100%); }
+  }
+
+
+/* @media (max-width: 768px) {
+  .supporter-box {
+    width: 150px;
+    height: 150px;
+  }
+
+  .supporter-box img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .supporter-box {
+    width: 150px;
+    height: 120px;
+  }
+
+  .supporter-box img {
+    width: 70px;
+    height: 70px;
+  }
+} */
