@@ -1375,4 +1375,82 @@ button i{
 
 
 
+/* Common styling */
+.register-btn, .scroll-up-btn {
+  position: fixed;
+  z-index: 999;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
 
+/* Register Now Button */
+.register-btn {
+  top: 50vh;
+  right: -55px;
+  padding: 12px 24px;
+  background-color: rgb(97, 100, 0);
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+  rotate: 90deg;
+  font-weight: bold;
+}
+
+.register-btn:hover {
+  text-decoration: underline;
+}
+
+.register-btn:active {
+  box-shadow: 0 2px 0 rgb(126, 108, 8);
+  transform: translateY(3px);
+  background-color: rgb(133, 128, 24);
+}
+/* Scroll Up Button */
+.scroll-up-btn {
+  bottom: 30px;
+  right: 30px;
+  background-color: rgb(100, 90, 0);
+  color: white;
+  border: none;
+  border-radius: 10%;
+  font-size: 22px;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
+/* Show class */
+.show {
+  display: block;
+  opacity: 1;
+}
+
+
+@media (max-width: 768px){
+  .register-btn {
+    top: 50vh;
+    right: -44px;
+    padding: 8px 12px;
+    background-color: rgb(100, 90, 0);
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    rotate: 90deg;
+    font-weight: bold;
+  }
+
+  .scroll-up-btn {
+    bottom: 30px;
+    right: 30px;
+    background-color: rgb(100, 90, 0);
+    color: white;
+    border: none;
+    border-radius: 10%;
+    font-size: 22px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+  }
+
+}
