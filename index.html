@@ -6,330 +6,433 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="./logo&img/logo.jpg">
     <title>Fit5 - SportsClub</title>
-    <link rel="stylesheet" href="style.css?ver=2025">
+    <link rel="stylesheet" href="stylecopy.css?ver=2025">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="main">
-        <div class="topbar">
-            <div class="mail">
-                <i class="fa-solid fa-envelope"></i>
-                <a href="mailto:sportsclubfit5@gmail.com" target="_blank">sportsclubfit5@gmail.com</a>
-            </div>
-            <div class="contact">
-                <i class="fa-solid fa-phone"></i>
-                <a href="tel:+91-8770895156" target="_blank">+91 8770895156 ,</a>
-                <a id="no2" href="tel:+91-8319692438" target="_blank">+91 8319692438</a>
-            </div>
-            <div class="btn1">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfyXeTUeA2VwTS4nYCxe9CHqcR-zhMHiJf8nPMynXGhLyW9ZA/viewform?usp=header " target="_blank">Register Now</a>
-                <i class="fa-solid fa-right-to-bracket"></i>
-            </div>
-            <div class="btn2">
-                <a  href="#">Donate Now</a>
-                <i class="fa-solid fa-hand-holding-dollar"></i>
-            </div>
-        </div>
-
-        <div class="navbar">
-            <div class="logo">
-                <img class="logoimg" src="./logo&img/logo.jpg" alt="Logo">
-                <div class="logoname">
-                    <p class="one"><i>FIT 5 Sports Club</i></p>
-                    <P class="two"><i>DEDICATION+MOTIVATION=SUCCESS</i></P>
+    <header>
+        <nav class="topbar">
+            <div class="left">
+                <div class="email"><i class="fa-solid fa-envelope"></i>
+                <a href="mailto:sportsclubfit5@gmail.com" target="_blank">sportsclubfit5@gmail.com</a></div>
+                <div class="contact">
+                    <span class="phone"><i class="fa-solid fa-phone"></i><a href="tel:+91-8770895156" target="_blank">+91 8770895156 </a></span>
+                    <span class="phone" id="no2"><a id="no2" href="tel:+91-8319692438" target="_blank">+91 8319692438</a></span>
                 </div>
             </div>
-            <button class="menu-btn" id="menu-btn">☰</button>
-            <div class="ul" id="navbar">
-                <ul class="navlist">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="activity.html">Camp Activities</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+            <div class="right">
+                <button class="register  registerLinkButton">Register Now<i class="fa-solid fa-right-to-bracket"></i></button>
+                <button class="donate">Donate Now<i class="fa-solid fa-hand-holding-dollar"></i></button>
+            </div>
+        </nav>
+
+        <!-- This is placed below the top navbar -->
+        <nav class="main-navbar">
+            <div class="left-section">
+                <img src="./logo&img/logo.jpg" alt="Logo" class="logo">
+                <div class="club-name">
+                    <h1><i>FIT 5 Sports Club</i></h1>
+                    <p>DEDICATION+MOTIVATION=SUCCESS</p>
+                </div>
+            </div>
+            <div class="right-section">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="activity.html">Camp Activities</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="contact.html">contact us</a></li>
                 </ul>
+                <div class="menu-toggle" id="menu-toggle">
+                    &#9776;
+                </div>
             </div>
+            <div class="mobile-menu" id="mobile-menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="activity.html">Camp Activities</a>
+                <a href="#gallery">Gallery</a>
+                <a href="contact.html">contact us</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="responsive-banner">
+            <!-- Banner for Desktop -->
+            <img src="logo&img/banner.png" alt="Desktop Banner" class="banner desktop-banner">
+        
+            <!-- Banner for Mobile/Tablet -->
+            <img src="logo&img/banner2.png" alt="Mobile Banner" class="banner mobile-banner">
+            <img src="logo&img/info.png" alt="mobile Banner" class="banner mobile-banner">
         </div>
 
-        <div class="mainpage">
-            <img class="banner2" src="logo&img/banner2.png" alt="img">
-            <img class="banner" src="logo&img/banner.png" alt="Banner">
-            <img id="infoimg" src="logo&img/info.png" alt="img">
-            <div class="wlc">
-                <h2 class="wlcline">Welcome to Fit-5 Club Summer Camp India 2025</h2>
-                <p class="wlcpara">FIT 5 Club presents an exclusive Residential Summer Camp for differently-abled students! This 15-day camp, specially designed for boys and girls aged 10 to 21 years, will take place from 29th May 2025 at India's First Disability Sports Center -<b>  Atal Bihari Vajpayee Training Center for Disability Sports, Gwalior.</b> Join us for an enriching experience filled with sports, learning, and personal growth in an inclusive and empowering environment!</p>
+        <!-- Information Section (Place below banner) -->
+        <section class="info-section">
+            <div class="info-container">
+                <h2 class="info-heading">Welcome to Fit-5 Club Summer Camp India 2025</h2>
+                <p class="info-paragraph">
+                    FIT 5 Club presents an exclusive Residential Summer Camp for differently-abled students! This 15-day camp, specially designed for boys and girls aged 10 to 21 years, will take place from 29th May 2025 at India's First Disability Sports Center -<b>  Atal Bihari Vajpayee Training Center for Disability Sports, Gwalior.</b> Join us for an enriching experience filled with sports, learning, and personal growth in an inclusive and empowering environment!
+                </p>
             </div>
-
-            <div class="details">
-                <div class="venue">
-                    <h2 class="venueheading">Venue Details</h2>
-                    <ul class="venuelist">
-                        <li><b>LOCATION:</b> Atal Bihari Vajpayee Training Center for Disability Sports, Gwalior</li>
-                        <li><b>CAMPUS:</b> India's First Disability Sports Center</li>
-                        <li><b>SCHEDULE:</b> 29th May to 12th June 2025</li>
-                        <li><b>CAMP DURATION:</b> 15 Days</li>
-                        <li><b> AGE GROUP:</b> 10-21 Years (Boys & Girls)</li>
-                        <li><b>TYPE:</b> Residential</li>
-                        <li><b>ACCOMMODATION:</b> Free Dormitory Accommodation with Sports Infrastructure.</li>
-                    </ul>
-                    <div class="read">
-                        <a href="about.html" target="_blank">READ MORE</a>
-                    </div>
-                </div>
-                <div class="fee">
-                    <h2 class="feeheading">Facilities & Fee Details</h2>
-                    <ul class="feelist">
-                        <li><b>ACCOMMODATION:</b> Free Comfortable dormitory-style stay.</li>
-                        <li><b>FOOD:</b> Nutritious and hygienic pure vegetarian meals served daily.
-                        </li>
-                        <li><b>LAUNDRY:</b> Daily service provided for all participants.
-                        </li>
-                        <li><b>SECURITY:</b> 24/7 security to ensure a safe and secure environment.</li>
-                        <li><b>TRAINING:</b> Expert guidance from certified national & international coaches.</li>
-                        <li><b>TOTAL FEE:</b> ₹12,500/- (Includes meals, training, and facilities) with free Accommodstion and Sports Infrastructure.</li>
-                    </ul>
-                    <div class="Register">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfyXeTUeA2VwTS4nYCxe9CHqcR-zhMHiJf8nPMynXGhLyW9ZA/viewform?usp=header" target="_blank">REGISTER NOW</a>
-                    </div>
-                </div>
+        </section>
+  
+        <!-- Responsive Boxes Section -->
+        <section class="boxes-section">
+            <div class="box">
+            <h2>Venue Details</h2>
+            <ul>
+                <li><b>LOCATION:</b> Atal Bihari Vajpayee Training Center for Disability Sports, Gwalior</li>
+                <li><b>CAMPUS:</b> India's First Disability Sports Center</li>
+                <li><b>SCHEDULE:</b> 29th May to 12th June 2025</li>
+                <li><b>CAMP DURATION:</b> 15 Days</li>
+                <li><b> AGE GROUP:</b> 10-21 Years (Boys & Girls)</li>
+                <li><b>TYPE:</b> Residential</li>
+                <li><b>ACCOMMODATION:</b> Free Dormitory Accommodation with Sports Infrastructure.</li>
+            </ul>
+            <button class="box-btn  readMoreLinkBtn">READ MORE</button>
             </div>
-
-            <div class="pics">
-                <div class="pic1">
-                    <p class="picpara"><b>At FIT 5 Club's Residential Summer Camp, we offer more than just sports and activities—we create an environment for personal growth, independence, and skill-buildind.</b> <br>
-                        <br>
-                        Our camp encourages participants to develop essential life skills, such as effective communication beyond screens, teamwork, and adapting to a supportive, inclusive community away from home. <br>
-                        <br>
-                        By stepping away from the academic routine, we focus on fun, creativity, and self-exploration through engaging sports and experiential learning. With safety and accessibility as our top priorities, our program empowers every participant to unlock their true potential and build confidence for the future.
-                        
-                    </p>
-                    <img class="img1" src="logo&img/pics1.jpg" alt="image">
-                </div>
-                <div class="pic2">
-                    <img class="img2" src="logo&img/pics2.jpg" alt="image">
-                    <p id="picpara" >Our Residential Summer Camp is designed to promote peer-group integration over a 15-day immersive experience, fostering personal growth, skill development, and independence. The program includes personality development courses, hands-on skill workshops, language learning with expert instructors, and adaptive sports training, ensuring a holistic approach to learning and self-discovery.
-                        <br><br>
-                        With participants from diverse backgrounds, the camp emphasizes team-building activities, encouraging collaboration and friendships within an inclusive and supportive environment.
-                        <br><br>
-                        Each day is structured into 14 hours of engaging and age-appropriate activities, ensuring that all students participate at a level that challenges and nurtures their potential. From adaptive adventure sports to leadership development, our camp provides a well-rounded experience that empowers students while ensuring safety, accessibility, and fun.</p>
-                </div>
+        
+            <div class="box">
+            <h2>Facilities & Fee Details</h2>
+            <ul>
+                <li><b>ACCOMMODATION:</b> Free Comfortable dormitory-style stay.</li>
+                <li><b>FOOD:</b> Nutritious and hygienic pure vegetarian meals served daily.</li>
+                <li><b>LAUNDRY:</b> Daily service provided for all participants.</li>
+                <li><b>SECURITY:</b> 24/7 security to ensure a safe and secure environment.</li>
+                <li><b>TRAINING:</b> Expert guidance from certified national & international coaches.</li>
+                <li><b>TOTAL FEE:</b> ₹12,500/- (Includes meals, training, and facilities) with free Accommodstion and Sports Infrastructure.</li>
+            </ul>
+            <button class="box-btn  registerLinkButton">REGISTER NOW</button>
             </div>
+        </section>
 
-            <div class="venuepics">
+         <!-- Text and Image Section -->
+        <section class="text-image-section">
+            <div class="text-content">
+            <p class="highlight-text">
+                At FIT 5 Club's Residential Summer Camp, we offer more than just sports and activities—we create an environment for personal growth, independence, and skill-buildind.
+            </p>
+            <p class="normal-text">
+                Our camp encourages participants to develop essential life skills, such as effective communication beyond screens, teamwork, and adapting to a supportive, inclusive community away from home. <br>
+                <br>
+                By stepping away from the academic routine, we focus on fun, creativity, and self-exploration through engaging sports and experiential learning. With safety and accessibility as our top priorities, our program empowers every participant to unlock their true potential and build confidence for the future.
+            </p>
+            </div>
+            <div class="image-content">
+            <img src="logo&img/pics1.jpg" alt="Fitness Training" />
+            </div>
+        </section>
+
+        
+        <!-- Image and Text Section -->
+        <section class="image-text-section">
+            <div class="image-block">
+                <img src="logo&img/pics2.jpg" alt="Sports Club" />
+            </div>
+            <div class="text-block">
+                <p class="text-paragraph">
+                    Our Residential Summer Camp is designed to promote peer-group integration over a 15-day immersive experience, fostering personal growth, skill development, and independence. The program includes personality development courses, hands-on skill workshops, language learning with expert instructors, and adaptive sports training, ensuring a holistic approach to learning and self-discovery.
+                </p>
+                <p class="text-paragraph">
+                    With participants from diverse backgrounds, the camp emphasizes team-building activities, encouraging collaboration and friendships within an inclusive and supportive environment.
+                </p>
+                <p class="text-paragraph">
+                    Each day is structured into 14 hours of engaging and age-appropriate activities, ensuring that all students participate at a level that challenges and nurtures their potential. From adaptive adventure sports to leadership development, our camp provides a well-rounded experience that empowers students while ensuring safety, accessibility, and fun.
+                </p>
+            </div>
+        </section>
+
+        <!-- Scrolling Image Section -->
+        <section class="scrolling-image-section">
+            <div class="image-track">
+            <div class="image-wrapper one">
                 <img src="logo&img/banner img 2.jpeg" alt="img 1">
                 <img src="logo&img/img about.jpg" alt="img 2">
                 <img src="logo&img/banner img 3.jpg" alt="img 3">
                 <img src="logo&img/img about2.jpg" alt="img 4">
                 <img src="logo&img/img about4.jpg" alt="img 5">
             </div>
+            <!-- Duplicate for seamless looping -->
+            <div class="image-wrapper two">
+                <img src="logo&img/banner img 2.jpeg" alt="img 1">
+                <img src="logo&img/img about.jpg" alt="img 2">
+                <img src="logo&img/banner img 3.jpg" alt="img 3">
+                <img src="logo&img/img about2.jpg" alt="img 4">
+                <img src="logo&img/img about4.jpg" alt="img 5">
+            </div>
+            </div>
+        </section>
 
-            <div class="comingevents">
-                <div class="backG">
-                    <div class="container">
-                        <h1>UPCOMING CAMPS & ACTIVITIES</h1>
-                        <div class="events">
-                            <div class="transform">
-                                <div class="pachmarhi">
-                                    <img src="logo&img/pachmarhi.jpg" alt="img">
-                                    <h3>PACHMARI ADVANTURE CAMP</h3>
-                                    <ul>
-                                        <li><b>Venue:</b> Pachmari, India</li>
-                                        <li><b>Age Group:</b> 10 - 25 Years (Boys & Girls)</li>
-                                        <li><b>Group Registration Only</b></li>
-                                    </ul>
-                                    <div class="pach">
-                                        <div class="read1">
-                                            <a class="readp" id="readMore" href="#">Read More</a>
-                                        </div>
-                                        <div class="register1">
-                                            <a class="Registerp" id="registerNow" href="#">Register Now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="shimla">
-                                    <img src="logo&img/shimla.jpg" alt="img">
-                                    <h3>SHIMLA ADVANTURE CAMP</h3>
-                                    <ul>
-                                        <li><b>Venue:</b> Shimla, India</li>
-                                        <li><b>Age Group:</b> 10 - 25 Years (Boys & Girls)</li>
-                                        <li><b>Group Registration Only</b></li>
-                                    </ul>
-                                    <div class="shim">
-                                        <div class="read1">
-                                            <a class="readp" id="readMore" href="#">Read More</a>
-                                        </div>
-                                        <div class="register1">
-                                            <a class="Registerp" id="registerNow" href="#">Register Now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="children">
-                                    <img src="logo&img/children.jpg" alt="img">
-                                    <h3>CHILDREN ADVANTURE CAMP</h3>
-                                    <ul>
-                                        <li><b>Venue:</b> India</li>
-                                        <li><b>Age Group:</b> 10 - 25 Years (Boys & Girls)</li>
-                                        <li><b>Group Registration Only</b></li>
-                                    </ul>
-                                    <div class="chil">
-                                        <div class="read1">
-                                            <a class="readp" id="readMore" href="#">Read More</a>
-                                        </div>
-                                        <div class="register1">
-                                            <a class="Registerp" id="registerNow" href="#">Register Now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>       
-                </div>
-            </div> 
 
-            <div class="bluebg">
-                <div class="bluecontainer">
-                    <div class="bluepara">
-                        <h3 id="h3">Why you should send your child to</h3>
-                        <h1>The Residential Summer Camp For Differently Abled Children 2025?</h1>
-                        <p id="para1">At FIT 5 Club’s Residential Summer Camp, we are dedicated to empowering differently-abled students through an enriching experience of sports, skill development, and personal growth. Designed for students aged 10-21 years, our camp fosters independence, leadership, and teamwork in a supportive and inclusive environment.</p>
-                        <h3>A Transformative Learning Experience</h3>
-                        <p id="para2">Inspired by the principles of holistic education, our camp goes beyond traditional learning. We combine adaptive sports training with essential life skills, creating a strong foundation for future opportunities. Participants will engage in interactive workshops, leadership sessions, and cultural exchanges, helping them discover their strengths and unlock their true potential.</p>
-                        <h3 id="obj">Objectives of the Camp</h3>
-                        <ol type="i">
-                            <li><b>></b> Promote skill-building through adaptive sports & interactive sessions</li>
-                            <li><b>></b> Encourage leadership & teamwork for confidence & independence</li>
-                            <li><b>></b> Provide hands-on training in first aid, fitness, and communication skills</li>
-                            <li><b>></b> Offer language learning for global exposure and cultural understanding</li>
-                            <li><b>></b> Create a safe and inclusive space where students can thrive</li>
-                        </ol>
-                        <p id="para3">With expert trainers, state-of-the-art facilities, and a well-structured schedule, our camp ensures that every participant learns, grows, and enjoys an unforgettable experience. This is more than just a summer camp—it’s a journey of self-discovery and empowerment!</p>
+
+        <!-- Dual Background Card Section -->
+        <section class="dual-background-section">
+            <h1>UPCOMING CAMP & ACTIVITIES</h1>
+            <div class="cards-container">
+                <div class="info-card">
+                    <div class="card-image">
+                    <img src="logo&img/pachmarhi.jpg" alt="Card Image 1" />
                     </div>
-                    <div class="blueimg">
-                        <img id="img2" src="logo&img/blueimg.jpg" alt="image">
-                        <div>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfyXeTUeA2VwTS4nYCxe9CHqcR-zhMHiJf8nPMynXGhLyW9ZA/viewform?usp=header" target="_blank">Register Now</a>
-                        </div>     
+                    <div class="card-content">
+                    <h3>PACHMARI ADVANTURE CAMP</h3>
+                    <ul>
+                        <li><b>Venue:</b> Pachmari, India</li>
+                        <li><b>Age Group:</b> 10 - 25 Years (Boys & Girls)</li>
+                        <li><b>Group Registration Only</b></li>
+                    </ul>
+                    <div class="card-buttons">
+                        <button>Read More</button>
+                        <button >Register Now</button>
+                    </div>
+                    </div>
+                </div>
+            
+                <div class="info-card">
+                    <div class="card-image">
+                    <img src="logo&img/shimla.jpg" alt="Card Image 2" />
+                    </div>
+                    <div class="card-content">
+                    <h3>SHIMLA ADVANTURE CAMP</h3>
+                    <ul>
+                        <li><b>Venue:</b> Shimla, India</li>
+                        <li><b>Age Group:</b> 10 - 25 Years (Boys & Girls)</li>
+                        <li><b>Group Registration Only</b></li>
+                    </ul>
+                    <div class="card-buttons">
+                        <button>Read More</button>
+                        <button>Register Now</button>
+                    </div>
+                    </div>
+                </div>
+        
+                <div class="info-card">
+                    <div class="card-image">
+                    <img src="logo&img/children.jpg" alt="Card Image 3" />
+                    </div>
+                    <div class="card-content">
+                    <h3>CHILDREN ADVANTURE CAMP</h3>
+                    <ul>
+                        <li><b>Venue:</b> India</li>
+                        <li><b>Age Group:</b> 10 - 25 Years (Boys & Girls)</li>
+                        <li><b>Group Registration Only</b></li>
+                    </ul>
+                    <div class="card-buttons">
+                        <button>Read More</button>
+                        <button>Register Now</button>
+                    </div>
                     </div>
                 </div>
             </div>
-                        
-            <div class="aboutus">
-                <h4>ABOUT US</h4>
-                <h2>Residential Summer Camp India 2025</h2>
-                <p>Welcome to FIT 5 Club’s Residential Summer Camp 2025, a one-of-a-kind experience dedicated to empowering differently-abled students through sports, skill development, and  holistic learning. Designed for boys and girls aged 10-21 years, this 15-day residential camp will be held at India’s first Disability Sports Center  Atal Bihari Vajpayee Training Center for Disability Sports, Gwalior, starting from May 29, 2025.</p>
-                <p>This summer, we invite you to be part of a program that blends adaptive adventure sports, leadership training, skill-building workshops, and personal development activities. With a team of national and international coaches, state-of-the-art facilities, and a structured curriculum, we ensure a safe, engaging, and enriching experience for every participant.</p>
-                <h3>Our Legacy</h3>
-                <p id="para2">Organized by FIT 5 Club, a pioneering initiative in inclusive education and sports, we are committed to enhancing the physical, mental, and social well-being of every participant. Our mission is to create a supportive environment where students can develop essential life skills, build confidence, and explore their full potential.</p>
-                <h3>Our Vision</h3>
+        </section>
+     
+        
+        <!-- Section with Text on Left and Image + Button on Right -->
+        <section class="section-green-two">
+            <div class="text-content">
+            <h4>Why you should send your child to</h4>
+            <h2>The Residential Summer Camp For Differently Abled Children 2025?</h2>
+            <p>This is a small paragraph introducing the topic or section content.At FIT 5 Club’s Residential Summer Camp, we are dedicated to empowering differently-abled students through an enriching experience of sports, skill development, and personal growth. Designed for students aged 10-21 years, our camp fosters independence, leadership, and teamwork in a supportive and inclusive environment.</p>
+        
+            <h3>A Transformative Learning Experience</h3>
+            <p>Inspired by the principles of holistic education, our camp goes beyond traditional learning. We combine adaptive sports training with essential life skills, creating a strong foundation for future opportunities. Participants will engage in interactive workshops, leadership sessions, and cultural exchanges, helping them discover their strengths and unlock their true potential.</p>
+        
+            <h3>Objectives of the Camp</h3>
+            <ul>
+                <li>Promote skill-building through adaptive sports & interactive sessions</li>
+                <li>Encourage leadership & teamwork for confidence & independence</li>
+                <li>Provide hands-on training in first aid, fitness, and communication skills</li>
+                <li>Offer language learning for global exposure and cultural understanding</li>
+                <li>Create a safe and inclusive space where students can thrive</li>
+            </ul>
+        
+            <p>With expert trainers, state-of-the-art facilities, and a well-structured schedule, our camp ensures that every participant learns, grows, and enjoys an unforgettable experience. This is more than just a summer camp—it’s a journey of self-discovery and empowerment!</p>
+            </div>
+        
+            <div class="image-content">
+            <img src="logo&img/blueimg.jpg" alt="Descriptive Alt Text" />
+            <button class="registerLinkButton">Register Now</button>
+            </div>
+        </section>
+    
+
+        <!-- About Us Section -->
+        <section class="about-us-section">
+            <h4>ABOUT US</h4>
+            <h2>Residential Summer Camp India 2025</h2>
+            <p>Welcome to FIT 5 Club’s Residential Summer Camp 2025, a one-of-a-kind experience dedicated to empowering differently-abled students through sports, skill development, and  holistic learning. Designed for boys and girls aged 10-21 years, this 15-day residential camp will be held at India’s first Disability Sports Center  Atal Bihari Vajpayee Training Center for Disability Sports, Gwalior, starting from May 29, 2025.</p>
+            <br>
+            <p>This summer, we invite you to be part of a program that blends adaptive adventure sports, leadership training, skill-building workshops, and personal development activities. With a team of national and international coaches, state-of-the-art facilities, and a structured curriculum, we ensure a safe, engaging, and enriching experience for every participant.</p>
+        
+            <h3>Our Legacy</h3>
+            <p>Organized by FIT 5 Club, a pioneering initiative in inclusive education and sports, we are committed to enhancing the physical, mental, and social well-being of every participant. Our mission is to create a supportive environment where students can develop essential life skills, build confidence, and explore their full potential.</p>
+        
+            <br>
+            <h3>Our Vision</h3>
+            <ul>
+                <li>India’s first residential summer camp for athletes with intellectual disabilities.</li>
+                <li>Creating an inclusive sports culture where every child, regardless of ability, gets equal opportunities.</li>
+                <li>Encouraging self-reliance and confidence through structured training programs.</li>
+                <li>Providing a healthy and supportive environment to nurture talent and create real change in society.</li>
+                <li>Identifying and supporting athletes for national and international sports competitions.</li>
+            </ul>
+        
+            <br>
+            <p>We are dedicated to building a community where everyone can thrive and grow through shared efforts and goals.</p>
+        
+            <button class="readMoreLinkBtn">Read More</button>
+        </section>
+
+
+        <!-- Latest News Section -->
+        <section class="news-section">
+            <div class="news-box">
+            <div class="news-header">LATEST NEWS</div>
+        
+            <div class="news-item">
+                <div class="news-image">
+                <img src="logo&img/newsimg1.png" alt="News 1">
+                </div>
+                <div class="news-content">
+                <h3>Tradition Meets Training: Fit 5 Club’s Summer Camp.</h3>
+                <p>Fit 5 Club’s Summer Camp at CDS Gwalior Blends Ancient Wisdom with Modern Sports Science.</p>
+                <a href="https://boroktimes.com/tradition-meets-training-fit-5-clubs-summer-camp-at-cds-gwalior-blends-ancient-wisdom-with-modern-sports-science/ " target="_blank">Read More</a>
+                </div>
+            </div>
+        
+            <div class="news-item">
+                <div class="news-image">
+                <img src="logo&img/newsimg2.png" alt="News 2">
+                </div>
+                <div class="news-content">
+                <h3>National Summer Camp 2025</h3>
+                <p>15-day Residential National Summer Camp for Children with Intellectual Disabilities.</p>
+                <a href="https://up18news.com/national-summer-camp-2025-a-pathway-to-empowerment-for-children-with-intellectual-disabilitys/" target="_blank">Read More</a>
+                </div>
+            </div>
+        
+            <!-- <div class="news-item">
+                <div class="news-image">
+                <img src="news3.jpg" alt="News 3">
+                </div>
+                <div class="news-content">
+                <h3>News Headline 3</h3>
+                <p>This is a short description of news 3.</p>
+                <a href="#">Read More</a>
+                </div> -->
+            </div>
+            </div>
+        </section>
+
+
+        <!-- Our Supporters Section -->
+        <section class="supporters-section">
+            <h2 class="supporters-subheading">Our Supporters</h2>
+            <h1 class="supporters-heading">Team</h1>
+            <div class="supporters-wrapper">
+            <div class="supporter-box">
+                <h3>Supported By</h3>
+                <img src="logo&img/logo.jpg" alt="Supporter 1">
+            </div>
+            <div class="supporter-box">
+                <h3>Supported By</h3>
+                <img src="logo&img/support graphling.jpg" alt="Supporter 2">
+            </div>
+            <div class="supporter-box">
+                <h3>Supported By</h3>
+                <img src="logo&img/support scl.jpg" alt="Supporter 3">
+            </div>
+            <div class="supporter-box">
+                <h3>Media Partner</h3>
+                <img src="logo&img/media.jpg" alt="Supporter 4" style="border-radius: 0px; object-fit: fill" height="50px" width="100px">
+            </div>
+            
+            <!--duplicates-->
+            <div class="supporter-box" id="duplicate">
+                <h3>Supported By</h3>
+                <img src="logo&img/logo.jpg" alt="Supporter 1">
+            </div>
+            <div class="supporter-box" id="duplicate">
+                <h3>Supported By</h3>
+                <img src="logo&img/support graphling.jpg" alt="Supporter 2">
+            </div>
+            <div class="supporter-box" id="duplicate">
+                <h3>Supported By</h3>
+                <img src="logo&img/support scl.jpg" alt="Supporter 3">
+            </div>
+            <div class="supporter-box" id="duplicate">
+                <h3>Media Partner</h3>
+                <img src="logo&img/media.jpg" alt="Supporter 4"  style="border-radius: 0px; object-fit: fill" height="50px" width="100px">
+            </div>
+
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <footer class="footer-section">
+            <div class="footer-container">
+              <!-- Column 1: Logo and Name -->
+              <div class="footer-column">
+                <div class="footer-logo-section">
+                  <img src="logo&img/logo_with_corrected_bg.png" alt="Logo" class="footer-logo" />
+                  <div class="footer-name">
+                    <h3>FIT 5 Sports Club</h3>
+                    <p>DEDICATION+MOTIVATION=SUCCESS</p>
+                  </div>
+                </div>
+                <h4 class="footer-subheading">Summer Camp India</h4>
+              </div>
+          
+              <!-- Column 2: Quick Links -->
+              <div class="footer-column">
+                <h4 class="footer-heading">Quick Links</h4>
                 <ul>
-                    <li>> India’s first residential summer camp for athletes with intellectual disabilities.</li>
-                    <li>> Creating an inclusive sports culture where every child, regardless of ability, gets equal opportunities.</li>
-                    <li>> Encouraging self-reliance and confidence through structured training programs.</li>
-                    <li>> Providing a healthy and supportive environment to nurture talent and create real change in society.</li>
-                    <li>> Identifying and supporting athletes for national and international sports competitions.</li>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="activity.html">Camp Activity</a></li>
+                  <li><a href="#">Gallery</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
                 </ul>
-                <div>
-                    <a href="about.html" target="_blank">Read More</a>
-                </div>
+              </div>
+          
+              <!-- Column 3: Contact Us -->
+              <div class="footer-column">
+                <h4 class="footer-heading">Contact Us</h4>
+                <ul>
+                  <li><a href="tel:+91-8770895156" target="_blank"><i class="fa-solid fa-phone"></i>+91 8770895156</a></li>
+                  <li><a href="tel:+91-8319692438" target="_blank"><i class="fa-solid fa-phone"></i>+91 8319692438</a></li>
+                  <li><a href="mailto:sportsclubfit5@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i>sportsclubfit5@gmail.com</a></li>
+                </ul>
+              </div>
+          
+              <!-- Column 4: Social Connect -->
+              <div class="footer-column">
+                <h4 class="footer-heading">Social Connect</h4>
+                <ul>
+                  <li><a href="https://youtube.com/@fit5sportsclub?si=wpJdP1RhmUrOiTyF " target="_blank"><i class="fa-brands fa-youtube"></i>youtube</a></li>
+                  <li><a href="https://www.instagram.com/f5_sports_?igsh=OTFzbm5kOXhpMXlw " target="_blank"><i class="fa-brands fa-square-instagram"></i>instagram</a></li>
+                  <li><a href="#"><i class="fa-brands fa-square-facebook"></i>Facebook</a></li>
+                </ul>
+              </div>
             </div>
-
-            <button id="scrollTopBtn" onclick="scrollToTop()">⬆</button>
-            <button id="registerBtn" onclick="openRegistration()">Register Now</button>
-
-            <div class="newslist">
-                <div id="head">
-                    <div class="head">Latest News</div>
-                </div>
-                <div class="news1">
-                    <img src="logo&img/newsimg1.png" alt="img">
-                    <div id="news1">
-                        <h4>Tradition Meets Training: Fit 5 Club’s Summer Camp.</h4>
-                        <p>Fit 5 Club’s Summer Camp at CDS Gwalior Blends Ancient Wisdom with Modern Sports Science.</p>
-                        <a href="https://boroktimes.com/tradition-meets-training-fit-5-clubs-summer-camp-at-cds-gwalior-blends-ancient-wisdom-with-modern-sports-science/ " target="_blank">Read More</a>
-                    </div>
-                </div>
-                <div class="news2">
-                    <img src="logo&img/newsimg2.png" alt="img">
-                    <div id="news2">
-                        <h4>National Summer Camp 2025</h4>
-                        <p>15-day Residential National Summer Camp for Children with Intellectual Disabilities.</p>
-                        <a href= "https://up18news.com/national-summer-camp-2025-a-pathway-to-empowerment-for-children-with-intellectual-disabilitys/" target="_blank">Read More</a>
-                    </div>
-                </div>
+          
+            <!-- Bottom Copyright -->
+            <div class="footer-bottom">
+              <p class="footer-copy">
+                Copyright © 2025 All right reserved. FIT 5 Sports Club –
+                <b>Terms of use – Privacy Policy – Refund & Cancellation Policy.</b>
+              </p>
             </div>
+          </footer>
+    </footer>
 
-            <div class="supporters">
-                <h3 class="supported">Our Supported</h3>
-                <h2 class="team">Team</h2>
-                <div id="supporters">
-                    <div>
-                        <p>Organised By</p>
-                        <img src="logo&img/logo.jpg" alt="img">
-                    </div>
-                    <div>
-                        <p>Supported By</p>
-                        <img id="graphling" src="logo&img/support graphling.jpg" alt="img">
-                    </div>
-                    <div>
-                        <p>Supported By</p>
-                        <img id="scl" src="logo&img/support scl.jpg" alt="img">
-                    </div>
-                    <div>
-                        <p>Media Partner</p>
-                        <img id="news" src="logo&img/media.jpg" alt="img">
-                    </div>
-                </div>
+     <!-- Scroll Up and Register Now Buttons -->
+     <button id="registerNowBtn">Register Now</button>
+     <button id="scrollUpBtn">&#8679;</button>
+   
 
-            </div>
-
-        </div>
-           
-        
-
-        <div class="lastinfo">
-            <div id="logo">
-                <div id="divlogo">
-                    <img src="logo&img/logo_with_corrected_bg.png" alt="img">
-                    <div id="namelogo">
-                        <p class="one"><i>FIT 5 Sports Club</i></p>
-                        <P class="two"><i>DEDICATION+MOTIVATIO=SUCCESS</i></P>
-                    </div>
-                </div>
-                <h1>Summer Camp India</h1>
-            </div>
-
-            <div class="quicklinks">
-                <h1>Quick Links</h1>
-                <a href="index.html" target="_blank">Home</a>
-                <a href="about.html" target="_blank">About Us</a>
-                <a href="activity.html" target="_blank">Camp Activity</a>
-                <a href="#">Gallery</a>
-                <a href="contact.html" target="_blank">Contact Us</a>
-            </div>
-
-            <div id="contact">
-                <h1>Contact</h1>
-                <a href="tel:+91-8770895156" target="_blank"><i class="fa-solid fa-phone"></i>+91 8770895156</a>
-                <a href="tel:+91-8319692438" target="_blank"><i class="fa-solid fa-phone"></i>+91 8319692438</a>
-                <a href="mailto:sportsclubfit5@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i>sportsclubfit5@gmail.com</a>
-            </div>
-
-            <div class="social">
-                <h1>Social Connect</h1>
-                <a href="https://youtube.com/@fit5sportsclub?si=wpJdP1RhmUrOiTyF " target="_blank"><i class="fa-brands fa-youtube"></i>youtube</a>
-                <a href="https://www.instagram.com/f5_sports_?igsh=OTFzbm5kOXhpMXlw " target="_blank"><i class="fa-brands fa-square-instagram"></i>instagram</a>
-                <a href="#"><i class="fa-brands fa-square-facebook"></i>Facebook</a>
-            </div>
-        </div>
-        <div class="rights">
-            <p>________________________________________________________________________________________________________________________________________</p>
-            <p id="right">copyright &copy; 2025 All rights reserved. FIT 5 Sports club - <b>Terms of use - Privacy Policy - Refund & Cancellation Policy</b></p>
-        </div>
-        
-    </div>
-
-    <script src="app.js"></script>
+   <script src="appcopy.js"></script>
 </body>
 </html>
