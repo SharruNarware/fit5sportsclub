@@ -1375,82 +1375,70 @@ button i{
 
 
 
-/* Common styling */
-.register-btn, .scroll-up-btn {
+/* Basic styles for both buttons */
+#registerNowBtn, #scrollUpBtn {
   position: fixed;
   z-index: 999;
-  display: none;
-  opacity: 0;
-  transition: opacity 0.4s ease-in-out;
-}
-
-/* Register Now Button */
-.register-btn {
-  top: 50vh;
-  right: -55px;
-  padding: 12px 24px;
-  background-color: rgb(97, 100, 0);
+  background-color: rgb(122, 97, 22);
   color: white;
-  text-decoration: none;
-  border-radius: 3px;
-  rotate: 90deg;
-  font-weight: bold;
-}
-
-.register-btn:hover {
-  text-decoration: underline;
-}
-
-.register-btn:active {
-  box-shadow: 0 2px 0 rgb(126, 108, 8);
-  transform: translateY(3px);
-  background-color: rgb(133, 128, 24);
-}
-/* Scroll Up Button */
-.scroll-up-btn {
-  bottom: 30px;
-  right: 30px;
-  background-color: rgb(100, 90, 0);
-  color: white;
+  padding: 12px 16px;
   border: none;
-  border-radius: 10%;
-  font-size: 22px;
-  width: 45px;
-  height: 45px;
   cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: all 0.4s ease;
 }
 
-/* Show class */
-.show {
-  display: block;
-  opacity: 1;
+/* Register Now Button Specific Styles */
+#registerNowBtn {
+  top: 50%;
+  right: -43px;
+  rotate: 90deg;
+  transform-origin: center;
+  transition: all .1s linear;
+  animation: colorAnimation 0.5s infinite alternate ease-in-out 0s forwards running;
 }
 
 
-@media (max-width: 768px){
-  .register-btn {
-    top: 50vh;
-    right: -44px;
-    padding: 8px 12px;
-    background-color: rgb(100, 90, 0);
-    color: white;
+
+@keyframes colorAnimation {
+from{
+    background-color: rgb(122, 97, 22);
     text-decoration: none;
-    border-radius: 3px;
-    rotate: 90deg;
-    font-weight: bold;
-  }
-
-  .scroll-up-btn {
-    bottom: 30px;
-    right: 30px;
-    background-color: rgb(100, 90, 0);
-    color: white;
-    border: none;
-    border-radius: 10%;
-    font-size: 22px;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-  }
-
 }
+to{
+    background-color: rgb(160, 115, 23);
+    text-decoration: underline;
+}
+}
+
+#registerNowBtn:active {
+box-shadow: 0 2px 0 rgb(102, 78, 14);
+transform: translatex(3px);
+}
+
+
+
+/* Scroll Up Button Specific Styles */
+#scrollUpBtn {
+  bottom: 20px;
+  right: 20px;
+  font-size: 22px;
+  padding: 10px 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #registerNowBtn {
+    font-size: 14px;
+    padding: 10px 14px;
+    right: -40px;
+  }
+
+  #scrollUpBtn {
+    font-size: 18px;
+    padding: 8px 12px;
+  }
+}
+
+
