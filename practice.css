@@ -346,12 +346,12 @@ button i{
 
 
 
-/* Contact Section Styles */
+/* about Section Styles */
 .contact-section {
     position: relative;
     width: 100%;
     height: 35vh; 
-    background: linear-gradient(rgba(1, 48, 23, 0.7)), url('logo&img/activitypage.jpg');
+    background: linear-gradient(rgba(15, 1, 32, 0.7)), url('logo&img/aboutpage.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -427,183 +427,227 @@ button i{
   
  
 
-/* Activity Section */
-.activity-section {
-  padding: 50px 0px;
-}
 
-.activity-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 60px;
-  flex-wrap: wrap; /* for responsive shifting */
-}
-
-.activity-box {
-  background: rgb(252, 252, 252);
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  flex: 1 1 45%;
-  max-width: 650px;
-}
-
-.activity-box h2 {
-  font-size: 1.5rem;
-  color: rgb(5, 78, 78);
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.activity-box .big-para {
-  font-size: 1.3rem; /* same as heading */
-  margin-bottom: 20px;
-  text-align: center;
-  font-weight: bold;
-  color: rgb(88, 40, 5);
-}
-
-.activity-box ul {
-  list-style-type: disc;
-  margin: 20px 0;
-  padding-left: 20px;
-}
-
-.activity-box ul li {
-  font-size: 1rem;
-  margin-bottom: 10px;
-  color: rgb(88, 40, 5);
-  list-style-type: none; 
-}
-
-.activity-box ul li i {
-  color: #04450e;
-  margin-right: 5px;
-  font-size: 1.3rem;
-}
-
-.activity-box p:last-of-type {
-  margin-top: 20px;
-  font-size: 1rem;
-  color: rgb(88, 40, 5);
-  font-weight: bold;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .activity-container {
-    flex-direction: column;
+  .about-us-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 60px 50px;
+    flex-wrap: wrap;
+  }
+  
+  .about-left {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .about-left h2 {
+    font-size: 30px;
+    color: rgb(6, 66, 88);
+    margin-bottom: 10px;
+  }
+  
+  .about-left h3 {
+    font-size: 25px;
+    color: rgb(6, 66, 88);
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .about-left p {
+    font-size: 15px;
+    margin-bottom: 5px;
+    line-height: 1.6;
+  }
+  
+  .about-left ul {
+    margin-bottom: 10px;
+    padding-left: 20px;
+  }
+  
+  .about-left ul li {
+    font-size: 15px;
+    margin-bottom: 5px;
+    list-style-type: none;
+  }
+  
+  .about-right {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
     align-items: center;
   }
   
-  .activity-box {
+  .about-right img {
+    margin-top: 50px;
     width: 90%;
-    max-width: none;
+    max-width: 450px;
+    height: 50dvh;
+    object-fit: cover;
   }
+  
+  /* 📱 Responsive Design */
+  @media (max-width: 768px) {
+    .about-us-section {
+      flex-direction: column;
+      align-items: center;
+      text-align: start;
+      padding: 60px 20px;
+    }
+  
+    .about-left h2 {
+      font-size: 25px;
+    }
+  
+    .about-left h3 {
+      font-size: 20px;
+    }
+  
+    .about-left p, 
+    .about-left ul li {
+      font-size: 15px;
+    }
+  
+    .about-right img {
+      width: 100%;
+      max-width: 400px;
+      margin-top: 20px;
+    }
+  }
+  
 
-  .activity-box h2{
-    font-size: 1.5rem;
-  }
 
-  .activity-box .big-para {
-    font-size: 1.3rem;
-  }
 
-  .activity-box ul li {
-    font-size: 1rem;
+
+  .green-section {
+    background-color: rgb(4, 47, 56);
+    padding: 60px 20px;
   }
+  
+  .green-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+  }
+  
+  .green-column {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    color: white;
+    text-align: start;
+  }
+  
+  .green-column h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+  
+  .green-column p {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .green-column ul {
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .green-column ul li {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  /* Separator Style */
+  .separator {
+    width: 2px;
+    background-color: white;
+    height: auto;
+  }
+  
+  /* Responsive Settings */
+  @media (max-width: 768px) {
+    .green-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .separator {
+      width: 90%;
+      height: 2px;
+      background-color: white;
+      margin: 20px 0;
+    }
+  }
+  
+
+
+
+
+
+/* Scrolling Image Section Styles */
+.scrolling-image-section {
+  padding: 30px 150px;
+  overflow: hidden;
+  background-color: #f7f7f7;
+  position: relative;
+  margin: 40px 0;
 }
 
-@media (max-width: 480px) {
-  .activity-box h2,
-  .activity-box .big-para {
-    font-size: 1.2rem;
-  }
-
-  .activity-box ul li {
-    font-size: 0.9rem;
-  }
-}
-
- 
-/*activity second section */
-.info-section {
+.image-track {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 60px;
-  padding: 10px 20px 50px;
-  flex-wrap: wrap;
+  gap: 30px;
+  width: max-content;
 }
 
-.info-box {
-  background-color: #f9f9f9;
-  padding: 20px;
-  width: 43%;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+.image-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.image-wrapper img {
+  width: 220px;
+  height: 200px;
+  object-fit: cover;
   border-radius: 8px;
 }
 
-.info-box h2 {
-  font-size: 1.3rem;
-  color: rgb(88, 40, 5);
-  margin-bottom: 15px;
+.two img{
+  display: none;
 }
 
-.big-para {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-  font-weight: bold;
-  color: rgb(5, 78, 78);
+@keyframes scrollLeftToRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
-.medium-para {
-  font-size: 1.1rem;
-  margin-bottom: 15px;
-  color: rgb(88, 40, 5);
-}
-
-.medium-para i {
-  margin-right: 5px;
-  font-size: 1.3rem;
-  color: #087a06;
-}
-
-.bold-para {
-  font-weight: bold;
-  font-size: 1rem;
-  color: rgb(88, 40, 5);
-}
-
-/* 📱 Responsive design */
 @media (max-width: 768px) {
-  .info-section {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .info-box {
-    width: 90%;
+  .scrolling-image-section {
+    padding: 20px;
   }
 
-  .info-box h2 {
-    font-size: 1.2rem;
+  .image-track {
+    animation: scrollLeftToRight 25s linear infinite;
   }
 
-  .big-para {
-    font-size: 1.3rem;
+  .two img{
+    display: block;
   }
 
-  .medium-para {
-    font-size: 1rem;
-  }
-
-  .bold-para {
-    font-size: 1rem;
+  .image-wrapper img {
+    width: 200px;
+    height: 200px;
   }
 }
-
 
 
 /* footer section */
