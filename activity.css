@@ -196,152 +196,130 @@ button i{
 
 
 /* Main Navbar Styles */
-.main-navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    padding: 15px 20px;
-    flex-wrap: wrap;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-}
-
-.left-section {
-    display: flex;
-    align-items: center;
+.navbar {
+  background-color: #ffffff;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo {
-    width: 70px;
-    height: 70px;
-    margin: 0px 10px 0px -5px;
+  display: flex;
+  align-items: center;
+}
 
+.logo-img {
+  width: 70px;
+  height: 70px;
+  margin: 0px 10px 0px -5px;
 }
 
 .club-name h1 {
-    font-size: 30px;
-    margin: 0;
-    color: rgb(101, 39, 6);
+  font-size: 30px;
+  margin: 0;
+  color: rgb(101, 39, 6);
 }
 
 .club-name p {
-    font-size: 11px;
-    font-weight: bold;
-    margin: 0;
-    color:black;
-}
-
-.right-section {
-    display: flex;
-    align-items: center;
+  font-size: 11px;
+  font-weight: bold;
+  margin: 0;
+  color:black;
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 25px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-.nav-links li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-    text-decoration: underline;
+.nav-links li {
+  position: relative;
 }
 
-.nav-links li a:hover {
-    text-decoration: none;
-    color: rgb(113, 89, 14);
+.nav-links a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.05rem;
+  text-decoration: underline;
+}
+
+.nav-links a:hover {
+  background-color: #e5dbdb;
+  text-decoration: none;
+  color: rgb(107, 57, 7);
+  border-radius: 4px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 150px;
+  z-index: 1000;
+  flex-direction: column;
+  list-style-type: none; 
+}
+
+.dropdown-menu li a {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown.active .dropdown-menu {
+  display: flex;
 }
 
 .menu-toggle {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+  color: black;
+  border: 1px solid gray;
+  padding: 3px 10px 0px 10px;
+  border-radius: 5px;
 }
 
-.mobile-menu {
-    display: none;
-    flex-direction: column;
-    background-color: rgb(224, 220, 220);
-    width: 100%;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 99;
-    padding: 10px 0;
-    transition: all 0.3s ease-in-out;
-}
-
-.mobile-menu a {
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-    font-size: 16px;
-    border-top: 1px solid #444;
-    text-decoration: underline;
-}
-
-.mobile-menu a:hover {
-    text-decoration: none;
-    background-color: rgb(113, 89, 14);
-}
-
-.mobile-menu.active {
-    display: flex;
-}
-
-/* Responsive Styles */
 @media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
+  .menu-toggle {
+    display: block;
+  }
 
-    .menu-toggle {
-        margin-right: 5px;
-        padding: 0px 10px;
-        display: block;
-        color: black;
-        border-radius: 3px;
-        border: 1px solid rgb(9, 9, 9);
-        background-color: rgba(181, 175, 175, 0.388);
-    }
+  .nav-links {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    background-color:rgb(255, 255, 255);
+    flex-direction: column;
+    width: 100%;
+    display: none;
+  }
 
-    .logo {
-        width: 55px;
-        height: 55px;
-    }
+  .nav-links.active {
+    display: flex;
+  }
 
-    .club-name h1 {
-        font-size: 25px;
-        font-weight: bold;
-    }
+  .dropdown-menu {
+    position: static;
+  }
 
-    .club-name p {
-        font-size: 10px;
-        font-weight: bold;
-    }
-
-    .main-navbar {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .left-section {
-        display: flex;
-        align-items: center;
-    }
-
-    .right-section {
-        display: flex;
-        align-items: center;
-    }
+  .nav-links li {
+    width: 100%;
+  }
 }
 
 
