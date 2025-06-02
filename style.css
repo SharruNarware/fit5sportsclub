@@ -1251,6 +1251,23 @@ button i{
   margin-bottom: 30px;
   color: #333;
   margin: 20px;
+  width: 400px;
+  height: 200px;
+}
+
+@media (max-width: 768px) {
+  .video-section h1 {
+    font-size: 20px;
+  }
+
+  .video-section h2 {
+    font-size: 20px;
+  }
+
+  .video-section iframe {
+    width: 90%;
+    height: 13rem;
+  }
 }
 
 
