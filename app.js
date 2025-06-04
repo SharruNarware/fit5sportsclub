@@ -32,7 +32,7 @@
   
       // Register Now Button pe click hone par registration page open
       document.getElementById("registerNowBtn").addEventListener("click", function() {
-      window.location.href = "https://docs.google.com/forms/d/1oFfAYtER_U4ifH5kJqQpRVVJjLLjAYFkso4u0m3TTX8/edit"; 
+       alert("Registration is closed now. Stay tuned for next Camp!");
       });
   
       // Scroll Up Button pe click hone par page top par scroll
@@ -46,7 +46,7 @@
 
       registerLinkButtons.forEach(button => {
           button.addEventListener("click", () => {
-            window.location.href = "https://docs.google.com/forms/d/1oFfAYtER_U4ifH5kJqQpRVVJjLLjAYFkso4u0m3TTX8/edit"; 
+            alert("Registration is closed now. Stay tuned for next Camp!");
           });
       });
   
