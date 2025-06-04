@@ -8,7 +8,6 @@
 
 body {
     background-color: #f5f5f5;
-    overflow-x: hidden;
 }
 
 .topbar {
@@ -296,7 +295,7 @@ button i{
   border-radius: 5px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 878px) {
   .menu-toggle {
     display: block;
   }
