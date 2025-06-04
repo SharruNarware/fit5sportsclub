@@ -8,6 +8,7 @@
 
 body {
     background-color: #f5f5f5;
+    overflow-x: hidden;
 }
 
 .topbar {
@@ -237,7 +238,7 @@ button i{
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
 }
 
 .nav-links li {
@@ -247,7 +248,7 @@ button i{
 .nav-links a {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 3px;
   padding: 10px;
   color: black;
   font-weight: bold;
