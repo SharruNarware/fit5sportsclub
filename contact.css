@@ -194,9 +194,6 @@ button i{
 
 
 
-
-/* Main Navbar Styles */
-
 .navbar {
   background-color: #ffffff;
   color: white;
@@ -245,15 +242,16 @@ button i{
 }
 
 .nav-links a {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   display: flex;
   align-items: center;
-  gap: 3px;
+  gap: 5px;
   padding: 10px;
   color: black;
   font-weight: bold;
   text-decoration: none;
   font-size: 1.05rem;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 .nav-links a:hover {
@@ -263,13 +261,17 @@ button i{
   border-radius: 4px;
 }
 
+a i{
+  font-size: 0.9rem;
+}
+
 .dropdown-menu {
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: white;
-  min-width: 150px;
+  background-color: rgb(255, 255, 255);
+  min-width: 180px;
   z-index: 1000;
   flex-direction: column;
   list-style-type: none; 
@@ -285,26 +287,26 @@ button i{
   display: flex;
 }
 
-.menu-toggle {
+.toggle-btn {
   display: none;
-  font-size: 25px;
+  font-size: 1.4rem;
   cursor: pointer;
   color: black;
   border: 1px solid gray;
-  padding: 3px 10px 0px 10px;
-  border-radius: 5px;
+  padding: 2px 8px 0 8px;
+  border-radius: 3px;
 }
 
 @media (max-width: 878px) {
-  .menu-toggle {
+  .toggle-btn {
     display: block;
   }
 
   .nav-links {
     position: absolute;
-    top: 90px;
+    top: 100%;
     left: 0;
-    background-color:rgb(255, 255, 255);
+    background-color:rgb(240, 237, 237);
     flex-direction: column;
     width: 100%;
     display: none;

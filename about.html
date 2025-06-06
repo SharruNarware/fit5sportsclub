@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="./logo&img/logo.png">
     <title>About Us</title>
-    <link rel="stylesheet" href="about.css?v=1.0">
+    <link rel="stylesheet" href="about.css?v=3.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -49,16 +49,16 @@
             </div>
           </div>
     
-          <div class="menu-toggle" id="menu-toggle">
+          <div class="toggle-btn" id="toggleBtn">
             <i class="fas fa-bars"></i>
           </div>
-      
-          <ul class="nav-links" id="nav-links">
+
+          <ul class="nav-links" id="navLinks">
             <li><a href="index.html">Home</a></li>
       
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle">About Us<i class="fas fa-caret-down"></i></a>
-              <ul class="dropdown-menu">
+              <a href="#" class="dropdown-toggle" id="aboutToggle">About Us<i class="fas fa-caret-down"></i></a>
+              <ul class="dropdown-menu" id="aboutMenu">
                 <li><a href="about.html">Introduction</a></li>
                 <li><a href="team.html">Our Team</a></li>
               </ul>
@@ -66,8 +66,8 @@
             <li><a href="#">Our Academies</a></li>
 
             <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">Our Camps<i class="fas fa-caret-down"></i></a>
-                    <ul class="dropdown-menu">
+                    <a href="#" class="dropdown-toggle" id="campToggle">Our Camps<i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown-menu" id="campMenu">
                       <li><a href="#">International Summer Camp</a></li>
                       <li><a href="#">Residential Summer Camp</a></li>
                       <li><a href="#">Student Adventure Camp</a></li>
@@ -251,6 +251,6 @@
      <button id="scrollUpBtn">&#8679;</button>
    
 
-   <script src="about.js?v=2.0"></script>
+   <script src="about.js?v=3.0"></script>
 </body>
 </html>
