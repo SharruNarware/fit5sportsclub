@@ -1,19 +1,63 @@
-    const menuToggle = document.getElementById("menu-toggle");
-    const navLinks = document.getElementById("nav-links");
-    const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+const toggleBtn = document.getElementById('toggleBtn');
+const navLinks = document.getElementById('navLinks');
+const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+const dropdownMenus = document.querySelectorAll('.dropdown-menu');
 
-    menuToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    });
+// Toggle nav on mobile
+toggleBtn.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
 
-    // Mobile dropdown click handling
-    dropdownToggles.forEach(toggle => {
-      toggle.addEventListener("click", (e) => {
-        e.preventDefault(); // prevent navigation
-        const dropdown = toggle.parentElement;
-        dropdown.classList.toggle("active");
-      });
-    });
+// Show on hover for all screen sizes
+document.querySelectorAll('.dropdown').forEach(dropdown => {
+  dropdown.addEventListener('mouseenter', () => {
+    dropdown.querySelector('.dropdown-menu').style.display = 'block';
+  });
+
+  dropdown.addEventListener('mouseleave', () => {
+    if (!dropdown.classList.contains('clicked')) {
+      dropdown.querySelector('.dropdown-menu').style.display = 'none';
+    }
+  });
+});
+
+// Toggle on click
+dropdownToggles.forEach(toggle => {
+  toggle.addEventListener('click', (e) => {
+    e.preventDefault();
+    const dropdown = toggle.closest('.dropdown');
+    const menu = dropdown.querySelector('.dropdown-menu');
+
+    const isOpen = dropdown.classList.contains('clicked');
+
+    // Close all dropdowns
+    closeAllDropdowns();
+
+    // If it was not open, open it
+    if (!isOpen) {
+      dropdown.classList.add('clicked');
+      menu.style.display = 'block';
+    }
+  });
+});
+
+// Click anywhere to close
+document.addEventListener('click', (e) => {
+  // Check if clicked inside any dropdown
+  const isClickInside = e.target.closest('.dropdown');
+  if (!isClickInside) {
+    closeAllDropdowns();
+  }
+});
+
+// Close all dropdowns
+function closeAllDropdowns() {
+  document.querySelectorAll('.dropdown').forEach(dropdown => {
+    dropdown.classList.remove('clicked');
+    dropdown.querySelector('.dropdown-menu').style.display = 'none';
+  });
+}
+
 
 
     // Page Scroll par buttons ko show/hide karna
