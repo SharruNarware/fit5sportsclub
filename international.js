@@ -91,3 +91,17 @@ function closeAllDropdowns() {
               alert("Registration is closed now. Stay tuned for next Camp!");
             });
         });
+
+
+
+
+const dropdowns = document.querySelectorAll(".second-dropdown");
+
+dropdowns.forEach(drop => {
+  drop.querySelector(".second-dropdown-header").addEventListener("click", () => {
+    dropdowns.forEach(d => {
+      if (d !== drop) d.classList.remove("active");
+    });
+    drop.classList.toggle("active");
+  });
+});
