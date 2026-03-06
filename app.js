@@ -122,3 +122,18 @@ function closeAllDropdowns() {
 
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
+
+
+
+
+
+
+// Website open होने पर popup दिखेगा
+window.onload = function(){
+    document.getElementById("marathonPopup").style.display = "flex";
+}
+
+// Close button
+document.getElementById("closePopup").onclick = function(){
+    document.getElementById("marathonPopup").style.display = "none";
+}
